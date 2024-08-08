@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    padding-left: 260px;
+    width: 80px;
+    height: 69px;
+}
+
+#grid-estructural {
+
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 'header header header header header'
+        '. seccion-principal seccion-principal seccion-principal .'
+        '. seccion-acerca-de seccion-acerca-de seccion-acerca-de .'
+        '. seccion-especial-del-dia seccion-especial-del-dia seccion-especial-del-dia .'
+        '. seccion-menu seccion-menu seccion-menu .'
+        '. nuestro-equipo nuestro-equipo nuestro-equipo .'
+        '. seccion-galeria seccion-galeria seccion-galeria .';
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+.border {
+    border: solid 1px black;
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+/* SECCION PRINCIPAL */
+
+
+
+#seccion-principal {
+    grid-area: seccion-principal;
+    justify-self: center;
+    align-self: center;
+}
+
+.titulo-principal {
+
+    font-family: 'Rochester', cursive;
+
+    color: #000000;
+}
+
+.btn-nueva-carta {
+    margin-top: 90px;
+    height: 70px;
+    width: 290px;
+    border-radius: 5px;
+    background-color: #D03333;
+    border: none;
+}
+
+.fuente-negrita {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.color-rojo {
+    color: #D03333;
+}
+
+.font-size-96px {
+    font-size: 96px;
+}
+
+.font-size-54px {
+    font-size: 54px;
+}
+
+
+
+
+
+
+
+
+
+/* SECCION ACERCA DE */
+
+#seccion-acerca-de {
+    grid-area: seccion-acerca-de;
+
+}
+
+.font-lily-script-one {
+    font-family: "Lily Script One", system-ui;
+    font-style: normal;
+    color: #D03333;
+}
+
+.font-size-64px {
+    font-size: 64px;
+}
+
+.font-size-24px {
+    font-size: 24px;
+}
+
+.font-size-16px {
+    font-size: 16px;
+}
+
+.roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgb(139, 139, 139);
+}
+
+.img-acerca {
+    border-radius: 50%;
+    width: 494px;
+    margin: 20px;
+}
+
+
+
+
+/* SECCION ESPECIAL DEL DIA */
+
+#seccion-especial-del-dia {
+    grid-area: seccion-especial-del-dia;
+}
+
+.img-especial-del-dia {
+    width: 344px;
+    height: 450px;
+    padding: 15px;
+
+}
+
+.icono-galeria-seleccionado {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D03333;
+}
+
+.icono-galeria-no-seleccionado {
+    margin: 2px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: #D03333;
+}
+
+.icono-galeria-seleccionado:hover {
+    cursor: pointer;
+}
+
+.icono-galeria-no-seleccionado:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* SECCION MENU */
+
+
+
+#seccion-menu {
+    grid-area: seccion-menu;
+}
+
+.tiposDeMenuSeleccionado {
+    width: 277px;
+    height: 140px;
+    background-color: #D03333;
+}
+
+.menu-seleccionado {
+    color: #FFFFFF;
+    display: inline;
+    border-bottom: solid;
+    padding-bottom: 2px;
+}
+
+.menu-no-seleccionado {
+
+    color: black;
+    display: inline;
+    border-bottom: solid;
+    padding-bottom: 2px;
+    border-color: #A8A8A8;
+}
+
+.tiposDeMenu {
+    width: 277px;
+    height: 140px;
+    background-color: #D9D9D9;
+}
+
+.lobster {
+    font-family: 'Lobster', sans-serif;
+}
+
+.imgMenu {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.imgPrecio {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    margin-left: 100px;
+
+}
+
+.containerMenu {
+    width: 58%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+
+
+/* SECCION NUESTRO EQUIPO */
+
+#nuestro-equipo {
+    grid-area: nuestro-equipo;
+}
+
+
+.imgEquipo {
+    width: 384px;
+    height: 619px;
+    background-color: #D9D9D9;
+}
+
+.containerimgequipo {
+    display: flex;
+    gap: 20px;
+}
+
+.imgcontainer {
+    width: 100%;
+    height: 360px;
+    background-color: #D03333;
+}
+
+.lobsterTwo {
+
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-style: normal;
+    color: #6D6B6B;
+    margin-bottom: 0px;
+}
+
+.imgNuestroEquipo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* SECCION GALERIA */
+
+
+#seccion-galeria {
+    grid-area: seccion-galeria;
+}
+
+
+.containergaleria {
+    display: flex;
+    width: 1159px;
+    height: 390px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.divcontainergaleria {
+    width: 749px;
+    height: 362px;
+    background-color: #3336d0;
+    margin-top: 23px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+
+
+
+.divcontainergaleria2 {
+
+    width: 372px;
+    height: 362px;
+    background-color: #3336d0;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.divcontainergaleria3 {
+
+    width: 372px;
+    height: 362px;
+    background-color: #3336d0;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+
+
+.imggaleria {
+    width: 749px;
+    height: 362px;
+}
+
+.imggaleriachicas {
+    width: 372px;
+    height: 362px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
