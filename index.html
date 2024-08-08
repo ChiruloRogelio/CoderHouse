@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./img/cuchara-y-tenedor.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <script>
+        function mostrarAlerta() {
+            alert("En mantenimiento...")
+        }
+    </script>
+</head>
+
+<body>
+    <div id="grid-estructural">
+        <!-- #region SECCION HEADER  -->
+        <header class="border">
+
+            <!-- Logo de la Web -->
+            <a id="aLogo" href="./index.html"><img src="./img/logo.jpg" alt="logo" class="logo"></a>
+
+            <!-- Agrego un check para saber cuando el usuario selecciono el menu -->
+            <!-- Agrego la etiqueta 'label' para poder utilizar el checkbox -->
+            <input type="checkbox" name="checkbox-Menu" id="checkboxmenu">
+            <label for="checkboxmenu" class="iconos-menu">
+                <svg id="icono-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+
+                <svg id="icono-close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+
+
+            <!-- NavBar de la web -->
+            <nav>
+                <ul>
+                    <li><a href="#seccionIndex">Inicio</a></li>
+                    <li><a href="#seccionAcerca">Acerca de</a></li>
+                    <li><a href="#seccionEspecialDelDia">Menú</a></li>
+                    <li><a href="#nuestroEquipo">Equipo</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="/paginas/precios.html">Precios</a></li>
+                    <li><a href="/paginas/reservas.html">Reservas</a></li>
+                    <li><a href="/paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+
+        </header>
+
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION PRINCIPAL  -->
+        <section id="seccion-principal" class="border">
+
+            <h1 class="titulo-principal font-size-96px">Comida para comer en <strong
+                    class="titulo-principal font-size-96px color-rojo">Familia</strong></h1>
+            <h3 class="titulo-principal  font-size-54px color-rojo">Apariencia Occidental</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor rem nam officia dicta et laboriosam
+                veniam
+                tenetur quo, explicabo </p>
+            <button class="btn-nueva-carta" onclick="mostrarAlerta()"><span class="fuente-negrita">Visualizar Nuesta
+                    Carta</span>
+            </button>
+        </section>
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION ACERCA DE  -->
+        <section id="seccion-acerca-de" class="border">
+            <div class="centar-acerca">
+                <p class="font-lily-script-one font-size-64px ">Acerca de Nosotros</p>
+                <p class="roboto-flex color-black">SUBTITULO DE QUIENES SOMOS</p>
+            </div>
+
+            <div class="acerca-de-nosotros">
+                <p class="roboto-flex font-size-16px centar-acerca texto-nosotros">Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit.
+                    Cumque natus odio illum
+                    sequi rerum temporibus quas? Ratione,
+                    debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus odio illum sequi rerum
+                    temporibus quas?
+                    Ratione,
+                    debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor
+                    molestias.Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Cumque natus odio illum sequi rerum temporibus quas? Ratione,
+                    debitis dicta odit
+                    numquam
+                    ipsum tempore suscipit fugit a asperiores eveniet dolor molestias Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit. Cumque natus odio illum sequi rerum temporibus quas? Ratione, debitis dicta odit numquam
+                    ipsum tempore
+                    suscipit
+                    fugit a asperiores eveniet dolor molestias Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Cumque natus
+                    odio
+                    illum sequi rerum temporibus quas? Ratione, debitis dicta odit numquam ipsum tempore suscipit
+                    fugit a asperiores
+                    eveniet
+                    dolor molestias
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque natus odio illum sequi rerum
+                    temporibus quas?
+                    Ratione,
+                    debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                </p>
+                <img src="./img/Acerca de.jpg" alt="" class="img-acerca">
+            </div>
+
+
+        </section>
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION ESPECIAL DEL DIA -->
+
+        <section id="seccion-especial-del-dia" class="border">
+            <div class="container-especial">
+                <p class="font-lily-script-one font-size-64px">Especial del Dia</p>
+                <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    natus odio illum
+                    sequi rerum temporibus quas? Ratione,
+                    debitis dicta
+                </p>
+
+            </div>
+
+            <div class="container-img">
+                <img src="./img/especial-del-dia/Taquillos.jpg" alt="Taquillos">
+                <img src="./img/especial-del-dia/Pata con papas.jpg" alt="Pata con papas">
+                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="img-especial-del-dia">
+                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="img-especial-del-dia">
+            </div>
+            <div class="siguientes-imagenes">
+                <div class="icono-galeria-seleccionado">
+
+                </div>
+                <div class="icono-galeria-no-seleccionado">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION MENU -->
+        <section id="seccion-menu" class="border">
+            <div class="container-especial">
+                <p class="font-lily-script-one font-size-64px">Otros Menús</p>
+                <p class="roboto-flex font-size-16px texto-menu">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Cumque
+                    natus odio illum
+                    sequi rerum temporibus quas? Ratione,
+                    debitis dicta
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    natus odio illum
+                    sequi rerum temporibus quas? Ratione,
+                    debitis dicta
+                </p>
+
+
+            </div>
+
+
+            <div class="btn-seleccion-menu">
+                <div class="tiposDeMenuSeleccionado">
+                    <br>
+                    <p class="menu-seleccionado roboto-flex font-size-16px">ENTRADAS</p>
+                </div>
+                <div class="tiposDeMenu">
+                    <div class="tiposDeMenu">
+                        <br>
+                        <p class="menu-no-seleccionado roboto-flex font-size-16px">PLATOS PRINCIPALES</p>
+                    </div>
+                </div>
+                <div class=" tiposDeMenu">
+                    <div class="tiposDeMenu">
+                        <br>
+                        <p class="menu-no-seleccionado roboto-flex font-size-16px">POSTRES</p>
+                    </div>
+                </div>
+                <div class="tiposDeMenu">
+                    <div class="tiposDeMenu">
+                        <br>
+                        <p class="menu-no-seleccionado roboto-flex font-size-16px">BEBIDAS</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="containerMenu">
+                <div class="card-menu">
+                    <img src="./img/menu/Bruschetta de Cogumelos.jpg" alt="" class="imgMenu">
+                    <span>
+                        <p class="lobster font-size-24px color-rojo">Bruschetta de Cogumelos</p>
+                        <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit
+                            debitis dicta
+                        </p>
+                    </span>
+                    <div class="imgPrecio">
+                        <p>$9,400.00</p>
+                    </div>
+
+
+
+                </div>
+                <div class="card-menu">
+                    <img src="./img/menu/croquetas.jpg" alt="" class="imgMenu">
+                    <span>
+                        <p class="lobster font-size-24px color-rojo">Croquetas de papas</p>
+                        <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit
+                            debitis dicta
+                        </p>
+                    </span>
+                    <div class="imgPrecio">
+                        <p>$9,400.00</p>
+                    </div>
+                </div>
+
+
+                <div class="card-menu">
+                    <img src="./img/menu/Bocaditos de hojaldre de champiñones.jpg" alt="" class="imgMenu">
+                    <span>
+                        <p class="lobster font-size-24px color-rojo">Bocaditos</p>
+                        <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit
+                            debitis dicta
+                        </p>
+                    </span>
+                    <div class="imgPrecio">
+                        <p>$10,200.00</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION NUESTRO EQUIPO -->
+        <section id="nuestro-equipo" class="border">
+
+            <div class="container-especial">
+                <p class="font-lily-script-one font-size-64px">Nuestro Equipo</p>
+                <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    natus odio illum
+                    sequi rerum temporibus quas? Ratione,
+                    debitis dicta
+                </p>
+            </div>
+
+            <div class="containerimgequipo">
+                <div class="card-equipo">
+                    <img src="./img/nuestro-equipo/DR_jamie_oliver_02.png" alt="Dr. Jamie Oliver">
+                    <p class="lobsterTwo">Jamie Oliver</p>
+
+                    <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque natus odio
+                        illum
+                        sequi rerum
+                        temporibus quas? Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                        Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                    </p>
+                </div>
+
+                <div class="card-equipo">
+                    <img src="./img/nuestro-equipo/images.jpeg" alt="Gordon Ramsay">
+                    <p class="lobsterTwo">Gordon Ramsay</p>
+
+                    <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque natus odio
+                        illum
+                        sequi rerum
+                        temporibus quas? Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                        Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                    </p>
+                </div>
+
+
+                <div class="card-equipo">
+                    <img src="./img/nuestro-equipo/bobby-flay_profile_2017.webp" alt="Bobby Flay">
+                    <p class="lobsterTwo">Bobby Flay</p>
+                    <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque natus odio
+                        illum
+                        sequi rerum
+                        temporibus quas? Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                        Ratione,
+                        debitis dicta odit numquam ipsum tempore suscipit fugit a asperiores eveniet dolor molestias.
+                    </p>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+        <!-- #endregion -->
+
+
+
+        <!-- #region SECCION GALERIA -->
+        <section id="seccion-galeria" class="border">
+            <div class="container-galeria">
+                <p class="font-lily-script-one font-size-64px">Galeria</p>
+                <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                    natus
+                    odio illum
+                    sequi rerum
+                </p>
+            </div>
+
+
+            <div class="containergaleria">
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/e1f065bf7275cbf9fc435472d05779d9.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/38ff3fb627339db867302ec38e976d40.jpg" alt="">
+                </div>
+            </div>
+            <div class="containergaleria">
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/e1f065bf7275cbf9fc435472d05779d9.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/38ff3fb627339db867302ec38e976d40.jpg" alt="">
+                </div>
+            </div>
+            <div class="containergaleria">
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/e1f065bf7275cbf9fc435472d05779d9.jpg" alt="">
+                </div>
+                <div class="card-galeria">
+                    <img src="./img/galeria/38ff3fb627339db867302ec38e976d40.jpg" alt="">
+                </div>
+
+            </div>
+            <!-- <div class="containergaleria">
+                <img src="./img/galeria/38ff3fb627339db867302ec38e976d40.jpg" alt="">
+                <img src="./img/galeria/e1f065bf7275cbf9fc435472d05779d9.jpg" alt="">
+                <img src="./img/galeria/38ff3fb627339db867302ec38e976d40.jpg" alt="">
+                <img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg" alt="">
+                <img src="./img/galeria/e1f065bf7275cbf9fc435472d05779d9.jpg" alt="">
+                <img src="./img/galeria/1c599dbc7113ee7c5791fe37cadb3b9b.jpg" alt="">
+            </div> -->
+
+            <!-- <div class="containergaleria">
+                <div class="containergaleria">
+
+                    <div class="divcontainergaleria3"><img src="./img/galeria/1c599dbc7113ee7c5791fe37cadb3b9b.jpg"
+                            alt="" class="imggaleriachicas"></div>
+                    <div class="divcontainergaleria3"><img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg"
+                            alt="" class="imggaleriachicas"></div>
+                    <div class="divcontainergaleria3"><img src="./img/galeria/61961d6f1bc1f1f27e8a0d0378017330.jpg"
+                            alt="" class="imggaleriachicas"></div>
+                </div>
+            </div> -->
+
+
+        </section>
+        <!-- #endregion -->
+
+
+        <!-- #region FOOTER -->
+
+        <footer class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/RogelioChirulo/" target="_blank" class="social-icon">
+                    <img src="img/footer/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/RChirulo" target="_blank" class="social-icon">
+                    <img src="img/footer/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/rogelio-chirulo-4329b61a5/" target="_blank" class="social-icon">
+                    <img src="img/footer/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/rogeliochiru/" target="_blank" class="social-icon">
+                    <img src="img/footer/instagram.png" alt="Instagram">
+                </a>
+            </div>
+            <p>&copy; 2024 Web Rogelio Chirulo. Todos los derechos reservados.</p>
+        </footer>
+        <!-- #endregion -->
+
+    </div>
+
+</body>
+
+</html>
